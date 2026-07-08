@@ -1,0 +1,44 @@
+# YOLOv8 道路车辆检测配置
+
+# 检测配置
+model:
+  name: yolov8n.pt
+  device: auto  # auto, cpu, cuda
+  confidence_threshold: 0.5
+  iou_threshold: 0.45
+
+# 车辆类别配置
+vehicle_classes:
+  2: car          # 汽车
+  3: motorcycle   # 摩托车
+  5: bus          # 公交车
+  7: truck        # 卡车
+
+# 显示颜色配置 (BGR格式)
+colors:
+  car: [255, 0, 0]          # 蓝色
+  motorcycle: [0, 255, 255]  # 黄色
+  bus: [0, 255, 0]          # 绿色
+  truck: [255, 0, 255]      # 紫色
+
+# 追踪配置
+tracking:
+  iou_threshold: 0.3
+  max_frames_missing: 30
+  counting_line:
+    y_position: 400
+    direction: horizontal
+
+# 视频处理配置
+video:
+  output_fps: 30
+  codec: mp4v
+  save_frames: false
+
+# 显示配置
+display:
+  window_name: Vehicle Detection
+  font_scale: 0.6
+  line_thickness: 2
+  show_fps: true
+  show_count: true
