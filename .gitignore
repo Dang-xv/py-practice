@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 模型权重（按需自行下载）
+yolov8n.pt
+*.pt
+*.onnx
+*.weights
+
+# 运行时输出 / 用户上传 / 测试素材
+uploads/
+output/
+cap/
+image/
+static/
+templates/
+
+# 日志
+*.log

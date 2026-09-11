@@ -1,0 +1,8 @@
+d:\Vehicle driving detection\
+├── vehicle_detector.py      # 主要检测模块
+├── vehicle_tracker.py       # 追踪和计数模块
+├── examples.py             # 使用示例
+├── quick_start.py          # 快速启动脚本
+├── config.yaml             # 配置文件
+├── requirements.txt        # 依赖列表
+└── README.md               # 项目说明
